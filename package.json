@@ -1,0 +1,51 @@
+{
+  "name": "react-starter-contioreach",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "A production-ready React (Vite) blog powered by the ContioReach headless CMS — a client-side SPA with a small API server that keeps the CMS key server-side and handles caching, tag invalidation and publish webhooks.",
+  "license": "MIT",
+  "homepage": "https://github.com/contioreach/react-starter-contioreach#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contioreach/react-starter-contioreach.git"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "spa",
+    "react-router",
+    "headless-cms",
+    "blog",
+    "contioreach",
+    "example",
+    "starter",
+    "tailwindcss",
+    "seo"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c cyan,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:client": "vite",
+    "dev:server": "node --watch --env-file=.env server/index.js",
+    "build": "vite build",
+    "start": "node --env-file=.env server/index.js",
+    "preview": "npm run build && npm start",
+    "test": "node --test \"server/**/*.test.js\""
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router": "^8.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.0"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  }
+}
