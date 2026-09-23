@@ -11,7 +11,7 @@ cp .env.example .env   # add your API key
 npm run dev
 ```
 
-> Looking for another stack? See the [Next.js](https://github.com/contioreach/nextjs-starter-contioreach), [Nuxt](https://github.com/contioreach/nuxtjs-starter-contioreach), [Astro](https://github.com/contioreach/astro-starter-contioreach), [SvelteKit](https://github.com/contioreach/sveltekit-starter-contioreach), [Remix](https://github.com/contioreach/remix-starter-contioreach) and [Vue](https://github.com/contioreach/vue-starter-contioreach) examples.
+> Looking for another stack? See the [Next.js](https://github.com/contioreach/nextjs-starter-contioreach), [Nuxt](https://github.com/contioreach/nuxtjs-starter-contioreach), [Astro](https://github.com/contioreach/astro-starter-contioreach), [SvelteKit](https://github.com/contioreach/sveltekit-starter-contioreach), [Remix](https://github.com/contioreach/remix-starter-contioreach), [Gatsby](https://github.com/contioreach/gatsby-starter-contioreach) and [Vue](https://github.com/contioreach/vue-starter-contioreach) examples.
 
 ---
 
@@ -27,7 +27,7 @@ So before sending `index.html`, the server fills in the head for that route — 
 
 **Be clear about what that buys you.** The *metadata* is genuinely server-rendered and correct on first byte. The article *body* is still rendered by React in the browser. That is a real improvement over shipping nothing, and it is the right trade if you want a plain-React codebase.
 
-**But if organic search is the main channel for this content, pick a server-rendered example instead** — [Next.js](https://github.com/contioreach/nextjs-starter-contioreach), [Nuxt](https://github.com/contioreach/nuxtjs-starter-contioreach), [Astro](https://github.com/contioreach/astro-starter-contioreach), [SvelteKit](https://github.com/contioreach/sveltekit-starter-contioreach) or [Remix](https://github.com/contioreach/remix-starter-contioreach). They send the full article on first byte. This one is for teams who want plain React and are making that trade deliberately.
+**But if organic search is the main channel for this content, pick an example that sends the article on first byte.** Staying in React, that is [Next.js](https://github.com/contioreach/nextjs-starter-contioreach), [Remix](https://github.com/contioreach/remix-starter-contioreach) or — if you can live with rebuilding to publish — [Gatsby](https://github.com/contioreach/gatsby-starter-contioreach), which is fully static and the easiest of all of them to crawl. [Nuxt](https://github.com/contioreach/nuxtjs-starter-contioreach), [Astro](https://github.com/contioreach/astro-starter-contioreach) and [SvelteKit](https://github.com/contioreach/sveltekit-starter-contioreach) do the same outside React. This one is for teams who want plain React and are making that trade deliberately.
 
 ---
 
