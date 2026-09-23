@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "type": "module",
-  "description": "A production-ready React (Vite) blog powered by the ContioReach headless CMS — a client-side SPA with a small API server that keeps the CMS key server-side and handles caching, tag invalidation and publish webhooks.",
+  "description": "React 19 and Vite headless CMS blog starter — a SPA plus a small API server that keeps the CMS key server-side, caches with tag invalidation, answers publish webhooks, and injects real meta and JSON-LD so crawlers get a full head. ContioReach CMS.",
   "license": "MIT",
   "homepage": "https://github.com/contioreach/react-starter-contioreach#readme",
   "repository": {
@@ -12,16 +12,24 @@
   },
   "keywords": [
     "react",
+    "reactjs",
     "vite",
     "spa",
     "react-router",
+    "express",
+    "api-server",
     "headless-cms",
-    "blog",
-    "contioreach",
-    "example",
-    "starter",
+    "blog-starter",
+    "on-demand-revalidation",
+    "seo",
+    "json-ld",
+    "structured-data",
     "tailwindcss",
-    "seo"
+    "contioreach",
+    "cms",
+    "starter-template",
+    "headless cms blog",
+    "react blog starter"
   ],
   "scripts": {
     "dev": "concurrently -n server,client -c cyan,magenta \"npm:dev:server\" \"npm:dev:client\"",
